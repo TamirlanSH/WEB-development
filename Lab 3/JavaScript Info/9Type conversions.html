@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Type conversions</title>
+</head>
+<body>
+    <script>
+        alert("" + 1 + 0); //10 as string
+        alert("" - 1 + 0); //-1 as number("-" only with num)
+        alert(true + false); //1+0
+        alert(6 / "3"); //2
+        alert("2" * "3"); // 6
+        alert(4 + 5 + "px"); // sum 4 and 5 then add "px" to 9
+        alert("$" + 4 + 5); // $45
+        alert("4" - 2); // 2
+        alert("4px" - 2); // "4px" we cant make a num
+        alert("  -9  " + 5); // -9 5     because starts string
+        alert("  -9  " - 5); // -14, because "-" only with num
+        alert(null + 1); // 0+1=1
+        alert(undefined + 1);// undefined becomes NaN
+        alert(" \t \n" - 2); // space become 0, then 0-2=-2
+    </script>
+</body>
+</html>
