@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What's the result of OR'ed alerts?</title>
+</head>
+<body>
+    <script>
+        alert( alert(1) || 2 || alert(3)); // 1 2 "2"<-false
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check the login</title>
+</head>
+<body>
+  <script>
+    let answer = prompt("Who's there?", "");
+    if (answer == "Admin"){
+      let answer2 = prompt("Password?", "");
+      if (answer2 =="TheMaster") {
+        alert("Welcome!");
+      }
+      else if (answer2 == "" || answer2 == null){
+        alert("Canceled");
+      }
+      else{
+        alert("Wrong password");
+      }
+    }
+    else if(answer == "" || answer == null){
+      alert("Canceled");
+    }
+    else{
+      alert("I don't know you");
+    }
+  </script>
+</body>
+</html>

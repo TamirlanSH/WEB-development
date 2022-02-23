@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Min and Pow</title>
+</head>
+<body>
+    <script>
+        function min(a, b){
+            let minAB;
+            if (a < b){
+                minAB = a;
+            }
+            else {
+                minAB = b;
+            }
+            return minAB;
+        }
+
+        alert(min(245, 768));
+
+        function pow(x, n){
+            let result = 1;
+            for (let i = 0; i < n; i++){
+                result = result * x;
+            }
+
+            return result;
+        }
+
+        alert(pow(2, 3));
+        alert(pow(1, 100));
+        alert(pow(3, 4));
+    </script>
+</body>
+</html>

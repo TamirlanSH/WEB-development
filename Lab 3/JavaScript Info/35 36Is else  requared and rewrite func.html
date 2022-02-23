@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Is else required and rewrite func</title>
+</head>
+<body>
+    <script>
+        function checkAge1(age) {
+            if (age > 18) {
+                return true;
+            } else {
+                // ...
+                return confirm('Did parents allow you?');
+            }
+        }
+
+        function checkAge2(age) {
+            if (age > 18) {
+                return true;
+            }
+            // ...
+            return confirm('Did parents allow you?');
+        }
+
+        checkAge1(17);
+        checkAge2(11);
+        // no differences
+
+        function checkAge3(age) {
+            return (age > 18) ? true : confirm('Did parents allow you?');
+        }
+
+        function checkAge4(age) {
+            return (age > 18) || confirm('Did parents allow you?');
+        }
+
+        checkAge3(19);
+        checkAge4(18)
+    </script>
+</body>
+</html>
